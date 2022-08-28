@@ -1,0 +1,25 @@
+/* Profile */
+.profile {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+// adjust tile sizes on smaller screens
+@include media-query($on-phone) {
+  @media screen and (max-width: $on-phone){
+
+    .profile {
+      width: 40%;
+    }
+
+  }
+}

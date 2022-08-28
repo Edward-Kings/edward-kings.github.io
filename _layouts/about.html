@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<br>
+
+{% if page.profile %}
+    {% if page.profile.image %}
+      <img class="profile {{ page.profile.align }}"  width="15%" src="{{ page.profile.image | prepend: '/assets/images/' | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+{% endif %}
+
+{{ content }}

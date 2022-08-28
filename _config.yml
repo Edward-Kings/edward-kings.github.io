@@ -1,0 +1,76 @@
+### your site title here
+
+title: Eduardo Reyes
+description: Alumno DCC
+
+baseurl: "" #name of GitHub repository
+url: "" #custom url to be used instead of GitHub repository
+email: ereyes@dcc.uchile.cl
+
+# Pagination
+paginate: 20
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
+# Social media links in footer
+facebook: "#"
+twitter: "#"
+linkedin: "#"
+github: "#"
+researchgate: "#"
+orcid: "#"
+
+future: true
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Tracker
+analytics:
+
+#optimization -> compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+#collection
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+sass:
+  sass_dir: /assets/css/_sass
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-email-protect
+  - jekyll-target-blank
+  - jekyll-archives
+  
+jekyll-archives:
+  enabled:
+    - categories  
+  layout: default
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'

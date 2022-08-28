@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: /archive/
+title: Archive
+---
+
+<div>
+	{% for post in site.posts %}
+	{% unless post.next %}
+	<h3><small>{{ post.date | date: '%B %D' }}</small></h3>
+	{% else %}
+	{% capture day %}{{ post.date | date: '%D %b' }}{% endcapture %}
+	{% capture nday %}{{ post.next.date | date: '%D %b' }}{% endcapture %}
+	{% if day != nday %}
+	<h3><small>{{ post.date | date: '%B %D' }}</small></h3>
+	{% endif %}
+	{% endunless %}
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
+	{% endfor %}
+</div>
