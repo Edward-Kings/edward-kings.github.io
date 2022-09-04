@@ -1,8 +1,6 @@
 ---
 layout: about
 permalink: /about/
-profile:
-  image: profile.svg
 published: true
 ---
 
