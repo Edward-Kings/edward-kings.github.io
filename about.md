@@ -6,7 +6,8 @@ published: true
 
 ## Contacto
 
-* [dev@edwardokings.com](mailto:dev@edwardokings.com)
+* [ereyes@dcc.uchile.cl](mailto:ereyes@dcc.uchile.cl)
+* [eduardo.reyes.r@ug.uchile.cl](mailto:eduardo.reyes.r@ug.uchile.cl)
 
 ## Trabajo
 
