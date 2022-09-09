@@ -19,7 +19,11 @@ Actualmente me encuentro en preparación para ejercer el rol de Auxiliar en curs
 
 ## Mis áreas de interés
 
-Próximamente
+- Desarrollo de software
+- Recursos educativos
+- Bases de Datos
+- Aplicaciones Web
+- Desarrollo de Videojuegos
 
 ## Mi nivel actual de educación
 
